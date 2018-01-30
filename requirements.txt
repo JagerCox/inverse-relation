@@ -1,0 +1,25 @@
+## Django Core
+django
+
+## Markdown and filter
+markdown
+django-filter
+
+## Django Extensions
+django-extensions
+
+## Django plot database (pydot)
+pydot
+
+## Django countryField
+# https://github.com/SmileyChris/django-countries
+django-countries
+
+## Django phonenumberField
+# https://github.com/stefanfoulis/django-phonenumber-field
+django-phonenumber-field
+
+## Django Automixture for DB
+# https://django-autofixture.readthedocs.io/en/latest/installation.html#using-the-development-version
+# (No acepta ManyToMany)
+django-autofixture

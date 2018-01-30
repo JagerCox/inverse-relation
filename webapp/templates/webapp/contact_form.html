@@ -3,7 +3,24 @@
 
 {% block content %}
 <form action="" method="post">{% csrf_token %}
-    {{ form.as_p }}
+
+        {% for field in form %}
+        <div class="row">
+          {% if field.errors %}
+          <div class="red-text">
+            {{ field.errors }}
+          </div>
+          {% endif %}
+          <div class="input-field col s12 m12 l12 xl12">
+            <label for="{{ field.name }}" class="active">{{ field.label }}</label>
+            {{ field }}
+            {% if field.help_text %}
+                <span style="color: #b6b6b6; font-size: 12px; font-style: italic;">{{ field.help_text|safe }}</span><hr>
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+
     <input type="submit" value="Save" />
 </form>
 {% endblock content %}
