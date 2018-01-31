@@ -23,3 +23,7 @@ django-phonenumber-field
 # https://django-autofixture.readthedocs.io/en/latest/installation.html#using-the-development-version
 # (No acepta ManyToMany)
 django-autofixture
+
+## Django captcha
+# http://django-simple-captcha.readthedocs.io/en/latest/usage.html
+django-simple-captcha
