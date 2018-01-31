@@ -2,9 +2,15 @@
 {% load staticfiles %}
 
 {% block content %}
-<h1>Te has zampado un 501</h1>
-<section class="pretty-top">
-  <h2>Aún creemos en ti :)</h2>
-  <img src="https://i.pinimg.com/474x/ee/a0/97/eea097a0d6b1511f2075f3c1bece02b2--memes-humor.jpg">
+<section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <img src="{% static "img/error.png" %}" />
+            <h2>501</h2>
+            <p class="lead">Internal error server</p>
+          </div>
+        </div>
+      </div>
 </section>
 {% endblock content %}

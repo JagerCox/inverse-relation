@@ -7,7 +7,8 @@ class Contact(models.Model):
     surname = models.CharField(max_length=100, help_text="Example: Doe", null=False, blank=False)
     nick_name = models.CharField(max_length=25, help_text="Example: J4Nthng", null=True, blank=True)
     alias = models.CharField(max_length=25, help_text="Example: Jonny", null=True, blank=True)
-    place = models.CharField(max_length=512,  help_text="Example: We kwonw two years ago in a congress about...", null=False, blank=False)
+    place = models.CharField(max_length=512,  help_text="Example: We kwonw two years ago in a congress about...",
+                             null=False, blank=False)
     birth_date = models.DateField(help_text="Format YYYY/MM/DD  Ex: 2018/06/30", null=True, blank=True)
 
     phone_number_one = PhoneNumberField(help_text="Example: +34611111111", null=False, blank=False)

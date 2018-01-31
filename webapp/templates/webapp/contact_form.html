@@ -2,8 +2,8 @@
 {% load staticfiles %}
 
 {% block content %}
+<h2>Contact form</h2><hr>
 <form action="" method="post">{% csrf_token %}
-
         {% for field in form %}
         <div class="row">
           {% if field.errors %}
@@ -20,7 +20,6 @@
           </div>
         </div>
         {% endfor %}
-    <!--<button class='js-captcha-refresh'></button>-->
     <hr>
     <input type="submit" value="Save" />
 </form>
