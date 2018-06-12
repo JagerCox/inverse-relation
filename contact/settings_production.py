@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+from contact.credentials import DJANGO_PASSWORD
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '850vn@5+pn0^uu$$8p(l2*x0qd9672q26i1hg6nguwswu@4ws2'
+SECRET_KEY = DJANGO_PASSWORD
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False

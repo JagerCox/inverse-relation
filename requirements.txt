@@ -1,29 +1,29 @@
 ## Django Core
-django
+django<=2.0.6
 
 ## Markdown and filter
-markdown
-django-filter
+markdown<=2.6.11
+django-filter<=1.1.0
 
 ## Django Extensions
-django-extensions
+django-extensions<=2.0.7
 
 ## Django plot database (pydot)
-pydot
+pydot<=1.2.4
 
 ## Django countryField
 # https://github.com/SmileyChris/django-countries
-django-countries
+django-countries<=5.3.1
 
 ## Django phonenumberField
 # https://github.com/stefanfoulis/django-phonenumber-field
-django-phonenumber-field
+django-phonenumber-field<=2.0.0
 
 ## Django Automixture for DB
 # https://django-autofixture.readthedocs.io/en/latest/installation.html#using-the-development-version
 # (No acepta ManyToMany)
-django-autofixture
+django-autofixture<=0.12.1
 
 ## Django captcha
 # http://django-simple-captcha.readthedocs.io/en/latest/usage.html
-django-simple-captcha
+django-simple-captcha<=0.5.7

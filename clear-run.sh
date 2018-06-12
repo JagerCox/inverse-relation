@@ -1,5 +1,10 @@
 #!/bin/bash
-echo "Delete old database and create"
+#!/bin/bash
+echo "Create password"
+randpw(){ < /dev/urandom tr -dc '+^_|=12345!/@\-&#$%qwertQW*ERTasdfgASDFGzxcvbZXCVB' | head -c64;echo; }
+var=$(randpw)
+echo "DJANGO_PASSWORD='$var'" > contact/credentials.py
+echo "Delete old database and migrations..."
 rm db.sqlite3
 rm -rf webapp/migrations
 rm -rf webapp/__pycache__
