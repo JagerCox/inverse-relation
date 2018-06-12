@@ -27,7 +27,7 @@ class Contact(models.Model):
     github_user = models.CharField(max_length=30, null=True, blank=True, help_text="Example: johndoe")
     bitbucket_user = models.CharField(max_length=30, null=True, blank=True, help_text="Example: johndoe")
     facebook_user = models.CharField(max_length=30, null=True, blank=True, help_text="Example: johndoe")
-    pinteres_user = models.CharField(max_length=30, null=True, blank=True, help_text="Example: johndoe")
+    pinterest_user = models.CharField(max_length=30, null=True, blank=True, help_text="Example: johndoe")
     twitter_user = models.CharField(max_length=30, null=True, blank=True, help_text="Example: @johndoe")
 
     additional_data = models.CharField(max_length=100, null=True, blank=True, help_text="Example: Doe")

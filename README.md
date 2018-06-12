@@ -1,5 +1,10 @@
 # Inverse Relation
 
+
+## Model
+
+![Model](doc-img/ER.png  "Model")
+
 ## Install and run Inverse Relation
 
 Install "Inverse Relation" contact form.
@@ -14,10 +19,17 @@ First time and test.
 ./clean-run.sh
 ```
 
-Use run.sh normally. Use it with supervisor on your server.
+Use run.sh normally. Use it as debug mode
 
 ```
 ./run.sh
+```
+
+Use run.sh normally. Use it on your server with Nignx, Gunicorn and Supervisor.
+Remember: You should change on settings_production.py your **ALLOWED_HOSTS**
+
+```
+./run-production.sh
 ```
 
 Finally, try it...
