@@ -1,9 +1,9 @@
 [Unit]
-Description=A useful description to be shown in command-line tools
+Description=Inverse-relation
 
 [Service]
 Restart=on-failure
-WorkingDirectory=/var/www/django-projectname/projectname
+WorkingDirectory=/opt/inverse-relation/
 ExecStart=/opt/inverse-relation/run-production.sh
 
 [Install]
