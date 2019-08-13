@@ -1,1 +1,1 @@
-DJANGO_PASSWORD='ZaWX4R!^xQGG&Ws1c_/bXz$*DVdZXwf/dvgvAwzF5gat2D|b*!r&#14s+B!e%g-q'
+DJANGO_PASSWORD='|SB1=Caa|VfW3egcQ|w2gSZrBZ/&/RsGG$DfwB|Gs^c&vA&WBRR@VF5ES4==AwSQ'

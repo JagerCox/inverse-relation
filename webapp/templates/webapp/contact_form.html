@@ -1,19 +1,21 @@
 {% extends 'webapp/base.html' %}
 {% load staticfiles %}
+{% load filters %}
 
 {% block content %}
-<h2>Contact form</h2><hr>
+<h2>Formulario de contacto</h2><hr>
 <form action="" method="post">{% csrf_token %}
         {% for field in form %}
         <div class="row">
-          {% if field.errors %}
-          <div class="red-text">
-            {{ field.errors }}
-          </div>
-          {% endif %}
+
           <div class="input-field col s12 m12 l12 xl12">
+            {% if field.errors %}
+            <span style="color:red">
+                {{ field.errors }}
+            </span>
+            {% endif %}
             <label for="{{ field.name }}" class="active">{{ field.label }}</label>
-            {{ field }}
+            {{ field|class_css:'form-control' }}
             {% if field.help_text %}
                 <span style="color: #b6b6b6; font-size: 12px; font-style: italic;">{{ field.help_text|safe }}</span><hr>
             {% endif %}
@@ -21,7 +23,7 @@
         </div>
         {% endfor %}
     <hr>
-    <input type="submit" value="Save" />
+    <input type="submit" value="Enviar" />
 </form>
 {% endblock content %}
 

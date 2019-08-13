@@ -1,0 +1,10 @@
+[Unit]
+Description=A useful description to be shown in command-line tools
+
+[Service]
+Restart=on-failure
+WorkingDirectory=/var/www/django-projectname/projectname
+ExecStart=/opt/inverse-relation/run-production.sh
+
+[Install]
+WantedBy=multi-user.target

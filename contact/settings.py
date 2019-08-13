@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'autofixture',
     'captcha',
     'django_extensions',
+    'django_filters',
     'webapp'
 ]
 

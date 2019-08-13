@@ -27,3 +27,6 @@ django-autofixture<=0.12.1
 ## Django captcha
 # http://django-simple-captcha.readthedocs.io/en/latest/usage.html
 django-simple-captcha<=0.5.7
+
+## vCard
+vobject
